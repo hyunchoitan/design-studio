@@ -1,2 +1,12 @@
 @import "_reset.scss";
 @import "_variables.scss";
+
+body {
+  background-color: lightseagreen;
+  width: 100%;
+}
+
+img {
+  width: 20%;
+  height: 20vh;
+}
