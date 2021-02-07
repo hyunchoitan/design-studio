@@ -1,12 +1,81 @@
 @import "_reset.scss";
 @import "_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
-  background-color: lightseagreen;
   width: 100%;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 1);
 }
 
 img {
   width: 20%;
   height: 20vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+}
+
+header {
+  width: 100%;
+  height: 5vh;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  .header-column {
+    width: 100%;
+    display: flex;
+    &:hover {
+      background-color: #e0e1e2;
+    }
+    &:last-child {
+      justify-content: space-between;
+      ul {
+        li {
+          width: 50%;
+          a {
+            color: rgba(0, 0, 0, 1);
+          }
+        }
+      }
+    }
+    .title {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      text-transform: uppercase;
+      &:hover {
+        color: white;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      width: 40%;
+      li {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        a {
+          color: rgba(0, 0, 0, 0.2);
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .language {
+      width: 10%;
+      height: 80%;
+      display: flex;
+      align-items: flex-end;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  }
 }
