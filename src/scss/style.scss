@@ -47,6 +47,7 @@ header {
     }
     &:first-child {
       ul {
+        padding-left: 5%;
         @include responsive("phone") {
           display: none;
         }
@@ -68,6 +69,9 @@ header {
             @include responsive("tablet") {
               display: none;
             }
+            @include responsive("laptop") {
+              width: 70%;
+            }
           }
           a {
             color: rgba(0, 0, 0, 1);
@@ -87,11 +91,11 @@ header {
     ul {
       display: flex;
       align-items: center;
-      width: 40%;
+      width: 60%;
       li {
         width: 30%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         a {
           color: rgba(0, 0, 0, 0.2);
           &:hover {
@@ -133,6 +137,9 @@ main {
       height: 95%;
       @include responsive("tablet") {
         height: 93%
+      }
+      @include responsive("laptop") {
+        height: 93%;
       }
     }
     .project-title {
