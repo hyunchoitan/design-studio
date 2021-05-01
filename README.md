@@ -35,7 +35,7 @@ This project is created with
 - [x] Image optimization
 - [x] SCSS compilation
 - [x] Main page Markup + SCSS
-- [ ] Responsive design
+- [x] Responsive design
 - [ ] Detail project page Markup + SCSS
 - [ ] Babel Support
 - [ ] Project Slide in detail page with modern JS
