@@ -3,5 +3,14 @@
         @media screen and (max-width: 499px) {
             @content
         }
+    } @else if $device == "tablet" {
+        @media screen and (max-width: 899px) {
+            @content
+        }
+    } @else if $device == "laptop" {
+        @media screen and (max-width: 1299) {
+            @content
+        }
     }
+    
 }
